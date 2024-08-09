@@ -1,0 +1,17 @@
+body {
+  background-color: #010e0b;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand,
+.btn {
+  color: #ffffff !important;
+}
+.hero-section {
+  padding: 60px 0;
+}
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+}
