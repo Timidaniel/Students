@@ -1,4 +1,4 @@
-body {
+.header {
   background-color: #010e0b;
   color: #ffffff;
 }
@@ -14,4 +14,52 @@ body {
 .hero-section img {
   max-width: 100%;
   height: auto;
+}
+.overlay-container {
+  position: relative;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  color: white;
+  transition: opacity 0.5s ease;
+  padding: 15px;
+}
+
+.card-title {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  align-self: flex-start;
+}
+
+.card-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay-container:hover .card-content {
+  display: block;
+  opacity: 1;
+}
+
+.overlay-container:hover .card-title {
+  opacity: 0.7;
+}
+
+.learn-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.learn-more i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.overlay-container:hover .learn-more i {
+  transform: translateX(5px);
 }
